@@ -51,3 +51,23 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.brd {
+  border: 1px solid;
+}
+
+.left-wrapper {
+  width: 70%;
+}
+
+.right-wrapper {
+  width: 30%;
+}
+
+.main-wrapper {
+  padding: 1rem;
+}
+
+.bold {
+  font-weight: bold;
+}

@@ -3,10 +3,10 @@ import DisplayTime from './DisplayTime';
 
 const DateTime: React.FC = () => {
   return (
-    <>
-      <DisplayDate />
+    <div className='datetime-wrapper'>
       <DisplayTime />
-    </>
+      <DisplayDate />
+    </div>
   )
 }
 

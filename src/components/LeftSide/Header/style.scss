@@ -1,1 +1,40 @@
 @import '../../../variables.scss';
+
+.left-wrapper {
+  .datetime-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    .heading-time {
+      font-size: 4rem;
+      color: $c-blue-dark;
+      font-weight: 600;
+    }
+
+    .small {
+      font-size: .9rem;
+      font-weight: 600;
+      margin-top: .5rem;
+    }
+  }
+
+  .welcome-figure {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+
+    img {
+      max-width: 45px;
+      margin-right: .7rem;
+    }
+
+    figcaption {
+      color: $c-blue-dark;
+      font-weight: 600;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+  }
+}
