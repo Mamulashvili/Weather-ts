@@ -13,7 +13,7 @@ const DisplayTime: React.FC = () => {
     const intervalId: number = window.setInterval(() => {
       const date: Date = new Date();
       const minutes = date.getMinutes();
-      setTime(`${date.getHours()}:${minutes < 0 ? '0' + minutes : minutes}`)
+      setTime(`${date.getHours()}:${minutes < 10 ? '0' + minutes : minutes}`)
     }, 1000);
 
     return () => clearInterval(intervalId)
@@ -21,7 +21,7 @@ const DisplayTime: React.FC = () => {
 
   return (
     <>
-      <h1> {time} </h1>
+      <h1 className='heading-time'> {time} </h1>
     </>
   )
 }

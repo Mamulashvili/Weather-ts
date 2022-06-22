@@ -11,9 +11,9 @@ const DisplayDate: React.FC = () => {
 
   return (
     <>
-      <h1>
+      <p className='small'>
         {today.toLocaleDateString("en-US", options)}
-      </h1>
+      </p>
     </>
   );
 };
