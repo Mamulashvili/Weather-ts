@@ -1,6 +1,14 @@
 @import '../../../variables.scss';
 
 .left-wrapper {
+  position: relative;
+
+  .toggle-wrapper {
+    right: 0;
+    top: 0;
+    padding: 1rem;
+  }
+
   .datetime-wrapper {
     display: flex;
     flex-direction: column;
