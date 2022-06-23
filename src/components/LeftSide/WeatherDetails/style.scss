@@ -1,0 +1,93 @@
+@import '../../../variables.scss';
+
+.weather-details-wrapper {
+  margin-top: 2rem;
+}
+
+.detail-card {
+  width: 49%;
+  background-color: #fff;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-title-light {
+    color: #CACEE2;
+  }
+
+  .air-figure {
+    margin-top: 1rem;
+
+    img {
+      max-width: 45px;
+    }
+
+    figcaption {
+      margin-left: .7rem;
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: .2rem;
+        font-weight: 600;
+      }
+
+      small {
+        font-size: .9rem;
+      }
+    }
+
+    .c-good {
+      color: $c-green-dark;
+    }
+
+    .c-moderate {
+      color: $c-yellow-dark;
+    }
+
+    .c-unhealthy {
+      color: $c-danger;
+    }
+  }
+
+  .air-quality-cart {
+    padding: 1.3rem 0 !important;
+    border-radius: 10px;
+    margin-right: .7rem;
+    cursor: default;
+    min-width: 60px;
+
+    P.name {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    p.amount {
+      font-size: .8rem;
+      font-weight: 500;
+      margin-top: .6rem;
+    }
+  }
+
+  .air-quality-cart-wrapper {
+    margin-top: 1rem;
+    overflow: auto;
+  }
+
+  .cart-good>div {
+    color: $c-green-dark;
+    background-color: $c-green-light;
+  }
+
+  .cart-moderate>div {
+    color: $c-yellow-dark;
+    background-color: $c-yellow-light;
+  }
+
+  .cart-unhealthy>div {
+    color: $c-danger;
+    background-color: $c-yellow-light;
+  }
+}

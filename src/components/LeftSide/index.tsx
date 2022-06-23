@@ -1,6 +1,7 @@
 import './style.scss';
 import Header from './Header';
 import Forecast from './Forecast';
+import WeatherDetails from './WeatherDetails';
 
 const Content: React.FC = () => {
 
@@ -8,6 +9,7 @@ const Content: React.FC = () => {
     <div className='left-wrapper main-wrapper brd'>
       <Header />
       <Forecast />
+      <WeatherDetails />
     </div>
   )
 }
