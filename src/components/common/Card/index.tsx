@@ -7,7 +7,7 @@ interface Props {
 
 const Card: React.FC<Props> = ({ cardStyle, children }) => {
   return (
-    <div className={`brd card card-wrapper ${cardStyle}`}>
+    <div className={`card card-wrapper ${cardStyle}`}>
       {children}
     </div>
 

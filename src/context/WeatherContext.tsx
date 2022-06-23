@@ -4,8 +4,16 @@ type WeatherProviderProps = {
   children: ReactNode
 }
 
+type WeatherDataType = {
+  current?: object;
+  forecast?: {
+    forecastday?: Array<string | number>
+  };
+  location?: object;
+}
+
 type WeatherContextType = {
-  data: object;
+  data: any | WeatherDataType;
   setData: (data: object) => void;
 }
 

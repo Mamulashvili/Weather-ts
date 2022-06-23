@@ -8,7 +8,7 @@ import { getLocation, getForecast } from './api';
 
 function App() {
 
-  const { data, setData } = useWeatherContext();
+  const { setData } = useWeatherContext();
 
   useEffect(() => {
     (async () => {
@@ -17,8 +17,6 @@ function App() {
       setData(data);
     })();
   }, [])
-
-  console.log(data);
 
   return (
     <div className="App flex">

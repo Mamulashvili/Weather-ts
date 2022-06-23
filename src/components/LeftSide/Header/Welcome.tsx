@@ -24,7 +24,9 @@ const Welcome: React.FC = () => {
   useEffect(() => {
     if (hours > 6 && hours <= 12) return setTimeInterval(availableIntervals.morning);
     if (hours > 12 && hours <= 18) return setTimeInterval(availableIntervals.afternoon);
-    if (hours > 18 && hours <= 6) return setTimeInterval(availableIntervals.evening);
+    if (hours > 18) return setTimeInterval(availableIntervals.evening);
+
+    setTimeInterval(availableIntervals.morning);
   }, [])
 
   return (
