@@ -1,0 +1,43 @@
+@import '../../../variables.scss';
+
+.forecast {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  .card {
+    cursor: pointer;
+    background-color: #fff;
+    transition: all .2s ease;
+
+    img {
+      max-width: 45px;
+      margin-bottom: .4rem;
+    }
+
+    figcaption,
+    p {
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: .4rem;
+    }
+
+    &:not(:first-child) {
+      margin: 0 1rem;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background-color: $c-blue-dark;
+    }
+
+    &:hover figcaption,
+    &:hover p {
+      color: #fff;
+    }
+  }
+
+}
