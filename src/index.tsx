@@ -4,14 +4,18 @@ import './index.css';
 import './reset.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { WeatherProvider } from './context/WeatherContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <WeatherProvider>
     <App />
-  </React.StrictMode>
+  </WeatherProvider >
+  // </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

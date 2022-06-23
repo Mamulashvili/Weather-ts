@@ -16,5 +16,6 @@ export const getLocation = async () => {
 
 export const getForecast = async (city: string = 'London', aqi: boolean = false) => {
   const data = await client.get(`/forecast.json?key=${WEATHER_API_KEY}&q=${city}&aqi=${aqi ? 'yes': 'no'}`);
-  console.log(data);
+  
+  return data;
 }
