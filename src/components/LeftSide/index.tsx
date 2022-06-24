@@ -6,7 +6,7 @@ import WeatherDetails from './WeatherDetails';
 const Content: React.FC = () => {
 
   return (
-    <div className='left-wrapper main-wrapper brd'>
+    <div className='left-wrapper main-wrapper'>
       <Header />
       <Forecast />
       <WeatherDetails />

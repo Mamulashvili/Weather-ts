@@ -1,18 +1,31 @@
 import Card from "../common/Card";
 import drop from '../../assets/images/drop.png';
 import wind from '../../assets/images/wind.png';
-import { useWeatherContext } from '../../context/WeatherContext';
 
-const CurrentWeather: React.FC = () => {
-  const { data } = useWeatherContext();
+type Props = {
+  data: {
+    current: {
+      condition: {
+        icon: string;
+        text: string;
+      };
+      temp_c: number;
+      wind_kph: number;
+      humidity: number;
+    }
+    location?: {
+      name: string;
+    };
+  }
+}
+
+const CurrentWeather: React.FC<Props> = ({ data }) => {
   const { current: weather } = data;
   const { location } = data;
   const dateFormat: Intl.DateTimeFormatOptions = {
     month: 'long',
     day: 'numeric'
   }
-
-  console.log(weather)
 
   return (
     <>
