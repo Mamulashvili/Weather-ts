@@ -13,8 +13,6 @@ type Props = {
 
 const AstroCard: React.FC<Props> = ({ location }) => {
   const { data: { forecast } } = useWeatherContext();
-
-  console.log(forecast?.forecastday[0]?.astro)
   const astro = forecast?.forecastday[0]?.astro || null;
 
   return (
@@ -69,7 +67,6 @@ const AstroCard: React.FC<Props> = ({ location }) => {
           </Card >
         )
       }
-
     </>
   )
 }

@@ -1,0 +1,72 @@
+@import '../../variables.scss';
+
+.current-weather-wrapper {
+  background-color: $c-blue-dark;
+  color: #fff;
+  font-weight: 500;
+
+  h4 {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  figure {
+    img {
+      width: 100px;
+    }
+
+    .date {
+      font-size: .9rem;
+    }
+
+    .temperature {
+      margin: 1rem 0;
+      font-size: 5em;
+      font-weight: bold;
+      position: relative;
+
+      &::after {
+        content: 'c';
+        position: absolute;
+        top: -1rem;
+        font-size: 3rem;
+      }
+    }
+
+    .condition {
+      font-size: 1.1rem;
+    }
+
+  }
+}
+
+.desc {
+  margin: 2rem 0;
+
+  figure {
+    border-right: 1px solid #fff;
+    align-items: center;
+    padding-right: 1.5rem;
+    min-width: 60px;
+
+    img {
+      width: 20px;
+      margin-right: .5rem;
+    }
+
+    figcaption {
+      font-size: .8em;
+    }
+  }
+
+  &>div {
+    margin-bottom: .5rem;
+
+  }
+
+  p {
+    margin-left: 1.5rem !important;
+    font-size: .8em;
+    min-width: 60px;
+  }
+}

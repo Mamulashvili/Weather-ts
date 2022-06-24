@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import Card from "../../common/Card";
-import { useWeatherContext } from '../../../context/WeatherContext';
 import AirQualityCart from "./AirQualityCart";
 import wind_1 from '../../../assets/images/wind-1.png'
 import wind_2 from '../../../assets/images/wind-2.png'
 import wind_3 from '../../../assets/images/wind-3.png'
 import wind_4 from '../../../assets/images/wind-4.png'
+import { useWeatherContext } from '../../../context/WeatherContext';
 
 type Props = {
   location: {
