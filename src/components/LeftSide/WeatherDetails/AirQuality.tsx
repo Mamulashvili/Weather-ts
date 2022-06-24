@@ -7,10 +7,14 @@ import wind_2 from '../../../assets/images/wind-2.png'
 import wind_3 from '../../../assets/images/wind-3.png'
 import wind_4 from '../../../assets/images/wind-4.png'
 
+type Props = {
+  location: {
+    name?: string
+  };
+}
 type airQualityIndexStausType = 'Good' | 'Moderate' | 'Unhealthy';
 
-const AirQuality: React.FC = () => {
-  const { data: { location } } = useWeatherContext();
+const AirQuality: React.FC<Props> = ({ location }) => {
   const { data: { current: weather } } = useWeatherContext();
 
   const airQualityIndex: number = weather?.air_quality['us-epa-index'] || 1;
@@ -44,9 +48,9 @@ const AirQuality: React.FC = () => {
             className={`flex air-quality-cart-wrapper cart-${airQualityIndexStaus.toLowerCase()}`}>
             {
               weather && Object.entries(weather?.air_quality).map((item) => {
-                console.log(typeof item[1])
                 return (
                   <AirQualityCart
+                    key={item[0]}
                     name={item[0]}
                     amount={item[1] || 0}
                   />

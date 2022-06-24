@@ -91,3 +91,22 @@
     background-color: $c-yellow-light;
   }
 }
+
+.astro-card {
+  .astro-card-inner {
+    background-color: $c-yellow-light;
+
+    small {
+      color: $c-blue-dark;
+    }
+
+    .astro-location {
+      margin-bottom: .8rem;
+      text-align: left;
+      font-weight: 500;
+      font-size: .9rem;
+    }
+  }
+
+
+}

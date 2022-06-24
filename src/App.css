@@ -56,6 +56,10 @@
   flex-direction: column;
 }
 
+.flex-start {
+  align-items: flex-start
+}
+
 .flex-row {
   flex-direction: row;
 }
